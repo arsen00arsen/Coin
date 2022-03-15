@@ -2,7 +2,7 @@ import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import CountScreen from './screens/CountScreen';
-import HomeScreen from './screens/HomeScreen';
+import AllRequests from './screens/AllRequests';
 
 const Stack = createNativeStackNavigator();
 
@@ -13,9 +13,9 @@ const App = () => {
         <Stack.Screen
           name="Home"
           component={CountScreen}
-          options={{ title: 'Welcome' }}
+
         />
-        <Stack.Screen name="HomeScreen" component={HomeScreen}   options={{ title: 'Hystori' }}/>
+        <Stack.Screen name="AllRequests" component={AllRequests} />
       </Stack.Navigator>
     </NavigationContainer>
   );
